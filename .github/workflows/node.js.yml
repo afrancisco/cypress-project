@@ -25,10 +25,10 @@ jobs:
       with:
         node-version: 14.x
     - run: npm install
-    - run: test
-    - run: report-merge
-    - run: report-generate
-    - name: Upload Report Artfact
+    - run: npm run test
+    - run: npm run report-merge
+    - run: npm run report-generate
+    - name: npm run Upload Report Artfact
       uses: actions/upload-artifact@v2.2.3
       with:
         path: mochawesome-report
