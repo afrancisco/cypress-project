@@ -1,6 +1,6 @@
 /// <reference types="cypress"/> ///   
 
-describe('Login', () => {
+describe('Login (regression)', () => {
     it("efetuar login com usuário e senha",()=>{
         const user= Cypress.env('user').email
         const password =Cypress.env('user').password
@@ -21,3 +21,4 @@ describe('Login', () => {
         .should("contain.text","Your Feed") 
     })
 });
+

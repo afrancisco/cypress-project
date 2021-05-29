@@ -1,4 +1,5 @@
-describe('Artigos', () => {
+
+    describe('Artigos (smoke,regression)', () => {
     before(() => {
         cy.request({
              method:"POST"

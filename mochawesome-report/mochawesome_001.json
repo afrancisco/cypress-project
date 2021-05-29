@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-29T00:52:21.833Z",
+    "end": "2021-05-29T00:52:24.946Z",
+    "duration": 3113,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "25a30e63-449d-4460-81fb-89b05c2a9601",
+      "title": "",
+      "fullFile": "cypress/integration/sing_in.spec.js",
+      "file": "cypress/integration/sing_in.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8507f350-2d8e-448e-8461-b122b99825f4",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "efetuar login com usuário e senha",
+              "fullTitle": "Login efetuar login com usuário e senha",
+              "timedOut": null,
+              "duration": 3088,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var user = Cypress.env('user').email;\nvar password = Cypress.env('user').password;\ncy.visit(\"/\");\ncy.get(\"[href='/login']\").click();\ncy.get(\"input[type='email']\").type(user);\ncy.get(\"input[type='password']\").type(password);\ncy.get(\".page button[type='button']\").contains(\"Sign in\").click();\ncy.get(\".feed-toggle .nav-link.active\").should(\"contain.text\", \"Your Feed\");",
+              "err": {},
+              "uuid": "a452f8b4-3b5c-45af-8749-6a0c84b6bad6",
+              "parentUUID": "8507f350-2d8e-448e-8461-b122b99825f4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a452f8b4-3b5c-45af-8749-6a0c84b6bad6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3088,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
