@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
+    "test-smoke": "npx cypress run --env grep=smoke",
     "report-merge": "mochawesome-merge  > index.json ",
     "report-generate": "marge  index.json",
     "report-clean": "rimraf mochawesome-report index.json "
